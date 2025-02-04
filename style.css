@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+body {
+  font-family: "Press Start 2P", cursive;
+  text-align: center;
+  background-color: #1a1a2e;
+  color: #00ffcc;
+  text-shadow: 2px 2px 4px #00ffcc;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.quiz-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 3px solid #00ffcc;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 255, 204, 0.8);
+  background-color: #111;
+  transition: transform 0.3s ease;
+}
+
+.quiz-container:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 3px 3px 5px rgba(0, 255, 204, 0.8);
+}
+
+#options button {
+  display: block;
+  margin: 10px auto;
+  padding: 15px;
+  width: 90%;
+  border: none;
+  background-color: #ffcc00;
+  color: black;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: "Press Start 2P", cursive;
+  box-shadow: 3px 3px 8px rgba(255, 204, 0, 0.8);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#options button:hover {
+  background-color: #ff6600;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 3px 3px 15px rgba(255, 102, 0, 0.8);
+}
+
+#options button:active {
+  transform: translateY(1px);
+}
+
+#score {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff00ff;
+  text-shadow: 1px 1px 2px #ff00ff;
+}
+
+#leaderboard {
+  margin-top: 20px;
+  padding: 20px;
+  border-top: 2px solid #00ffcc;
+  background-color: #222;
+  box-shadow: 0 4px 10px rgba(0, 255, 204, 0.5);
+}
+
+#leaderboard h2 {
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 5px #ff00ff;
+}
+
+#leaderboard p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff00ff;
+  text-shadow: 1px 1px 2px #ff00ff;
+}
+
+@media (max-width: 600px) {
+  .quiz-container {
+    width: 90%;
+    margin: 30px auto;
+  }
+
+  #options button {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.restart-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 15px;
+  width: 60%;
+  border: none;
+  background-color: #ff005d;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: "Press Start 2P", cursive;
+  box-shadow: 3px 3px 5px rgba(255, 204, 0, 0.8);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.restart-btn:hover {
+  background-color: #d0ff00;
+  color: black;
+  transform: translateY(-3px);
+}
+
+.restart-btn:active {
+  transform: translateY(1px);
+}
+
+.restart-btn:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 204, 0, 0.8);
+}
