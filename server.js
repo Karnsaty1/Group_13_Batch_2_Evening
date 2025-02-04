@@ -3,12 +3,12 @@ const fs = require("fs");
 const path = require("path");
 
 const server = http.createServer((req, res) => {
-  // Enable CORS
+  
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
-  // Handle preflight requests
+  
   if (req.method === "OPTIONS") {
     res.writeHead(204);
     return res.end();
